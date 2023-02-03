@@ -21,11 +21,7 @@ header > h1 {
     text-align: center;
 }
 
-/* header > img { 
- } */
-
 header h2 {
-    /* background-color:rgb(29, 94, 214); */
     background-color: white;
     text-align: center;
     border: 2px solid black;
@@ -41,7 +37,6 @@ header > .container {
     align-items: center;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid rgba(151, 8, 8, 0.911); */
     width: 100%;
 }
 
@@ -55,12 +50,9 @@ header .container_menu > .box {
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 5px 8px 10px black;
-    /* padding: 25px 0; */
     background-color: rgb(29, 94, 214);
     color: white;
-    /* font-size: 26px; */
     margin: 0 5px;
-    /* padding: 0 15px; */
     text-align: center;
     width: 125px;
 }
@@ -69,8 +61,6 @@ header .container_banner {
     border: 2px solid black;
     border-bottom:  0;
     border-radius: 15px 15px 0 0;
-    /* border-top: 0;
-    border-bottom: 0; */
     width: 85%;
 }
 
@@ -109,7 +99,7 @@ header .container a {
 .seccion > .seccion_lista {
     display: inline-block;
     font-family: cursive;    
-    font-size: 22px;
+    font-size: 1.1em;
     font-style: italic;
     list-style: none;
 }
@@ -117,7 +107,7 @@ header .container a {
 .seccion > .seccion_about {
     display: inline-block;
     font-family: cursive;    
-    font-size: 20px;
+    font-size: 1.1em;
     font-style: italic;
     width: 43%;
     position: relative;
@@ -127,15 +117,16 @@ header .container a {
 .seccion > .seccion_contact {
     display: inline-block;
     font-family: cursive;    
-    font-size: 22px;
+    font-size: 1.2em;
     font-style: italic;
     width: 43%;
 }
 
-.seccion > p {
+.seccion > .seccion_about p {
     font-size: 18px;
     font-family: cursive;
-    margin: 3px 0 15px;    
+    margin: 3px 0 15px;
+    text-indent: 25px;
 }
 
 .seccion img {
@@ -146,12 +137,8 @@ header .container a {
     margin-bottom: 40px;
 }
 
-.seccion > .seccion_lista {
-    list-style-type: lower-alpha;
-}
-
 .rules {
-    margin: 0 20px;
+    margin: 0 115px;
 }
 
 .rules > #h2_1, #p1 {
@@ -161,6 +148,14 @@ header .container a {
 .rules > h2 {
     margin: 35px 0 5px;
     text-align: left;
+}
+
+.rules h3 {
+    display: inline-block;
+}
+
+.rules p, li {
+    font-size: 1.5em;
 }
 
 .rules > .items1 {
@@ -174,4 +169,95 @@ header .container a {
 
 .rules .items2 {
     list-style-type: lower-alpha;
+    font-size: 1.1rem;
+}
+
+.rules > .tab {
+    text-indent: 25px;
+}
+
+.rules > ul {
+    list-style: circle;
+    list-style-position: inside;
+    padding: 0 100px;
+}
+
+/* ---------------- */
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info > h1 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.2em;
+    text-align: right;
+    padding: 0 90px;
+    width: 85%;
+}
+
+.info > h3, h4 {
+    font-size: 1.3em;
+    margin: 10px 200px;
+    font-style: italic;
+}
+
+.info > h4 {
+    text-decoration: underline;
+}
+
+.info > .info_table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info table {
+    font-size: 1.2em;
+    width: 70%;
+}
+
+.info thead {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.info th, td { 
+     padding: 5px 0;    
+ }
+
+
+.info thead th {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.info tbody #der {
+    text-align: center;
+}
+
+.info_2 {
+    margin: 3em 8em;
+}
+
+.info_2 > .prfos {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.info_2 > dl {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.info dt {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.info dd {
+    display: inline-block;
+    margin: 1em 0;
 }
