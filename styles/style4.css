@@ -54,7 +54,10 @@ header .container_menu > .box {
     color: white;
     margin: 0 5px;
     text-align: center;
-    width: 125px;
+    /* width: 125px; */
+    font-size: 1.3rem;
+    width: 12vw;
+    /* height: 3vw; */
 }
 
 header .container_banner {
@@ -271,4 +274,413 @@ header .container a {
 .info dd {
     display: inline-block;
     margin: 1em 0;
+}
+
+.info .mapas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.info .site {
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ------------ Formulario ------------- */
+
+.registro {
+    margin: 3rem;
+    font-size: 1.2em;
+}
+
+.registro h1 {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset input {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+fieldset#personal label {
+    margin-top: 15px;
+}
+
+fieldset#personal > input{
+    margin: 25px 40px 0 0;
+    width: 34%;
+}
+
+fieldset#personal > .nac_gen input {
+    border: none;
+    border-bottom: 1px solid black;
+    
+}
+
+fieldset#personal > #direccion {
+    width:83%;
+}
+
+
+fieldset {
+    border: none;
+    margin-bottom: 3rem;
+    margin-left: 40px;
+}
+
+fieldset .nac_gen {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+fieldset #nacimiento {
+    width: 335px;
+}
+
+fieldset#personal #ciudad {
+    width: 40%;
+}
+
+fieldset#personal .gen {
+    display: flex;
+    align-items: baseline;
+    margin-left: 60px;
+}
+
+
+fieldset#personal .edu {
+    display: flex;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+fieldset#personal .edu input {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+fieldset #ch1, #ch2, #ch3, #ch4, #ch5{
+    vertical-align: super;
+}
+
+fieldset#near_school legend {
+    margin-bottom:0.5em;
+}
+
+fieldset#near_school #school {
+    font-weight: bold;
+}
+
+fieldset#near_school .school {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset#near_school .school label {
+    width: 45%;
+}
+
+fieldset#near_school .school input {
+    margin-right: 0;
+}
+
+fieldset#near_school .school span {
+    margin-right: 20px;
+}
+
+
+fieldset#position .posi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset#position .posi label {
+    width: 35%;
+}
+
+fieldset#position .posi input {
+    margin-right: 0;
+}
+
+fieldset#position .posi span {
+    margin-right: 20px;
+}
+
+
+
+fieldset#uniforms .uniforme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+fieldset#uniforms .uniforme label {
+    width: 48%;
+}
+
+fieldset#uniforms .uniforme input {
+    margin-right: 0;
+}
+
+fieldset#uniforms .uniforme span {
+    margin-right: 20px;
+}
+
+
+fieldset#permission .permis {
+    text-indent: 0;
+}
+
+fieldset#permission textarea {
+    width: 100%;
+}
+
+fieldset#permission .auth {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    width: 54%;
+}
+
+fieldset#permission .auth input {
+    margin: 15px;
+}
+
+fieldset#permission .auth #fecha_actual {
+    width: 350px;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+fieldset#bottom input {
+    border: 1px solid darkgray;
+    padding: 10px;
+    width: 100px;
+}
+
+
+
+/* ----------      Tabla         --------- */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+table {
+    display: flex;
+    /* border: 1px; */
+    justify-content: center;
+}
+
+td,th {
+    border: 4px solid #ccc;
+    text-align: center;
+    padding: 8px;
+  }
+
+/* .datos tbbody {
+    width: 400px;
+} */
+
+td:first-child {
+    width: 200px;
+}
+
+td:nth-child(2) {
+    max-width: 250px;
+}
+
+/* ---------     Media Query       --------- */
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+header > h1 {
+    font-size: 2rem;
+}
+
+    header .container_menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0 15px;
+    }
+
+    header .container_menu > .box {
+        border-radius: 50%;
+        margin-top: 1rem;
+        text-align: center;
+        width: 300px;
+    }
+
+
+    .seccion {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 25px;    
+    }
+    
+    .seccion > .seccion_lista {
+        display: inline-block;
+        font-family: cursive;    
+        font-size: 1.1em;
+        font-style: italic;
+        list-style: none;
+    }
+
+    .seccion img {
+        border-radius: 15px;
+        width: 90%;
+        height: 100%;
+    }
+
+
+    .seccion > .seccion_about {
+        width: 85%;
+    }
+
+
+    .seccion > .seccion_contact {
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 85%;
+    }
+
+
+    .rules {
+        margin: 0 40px 40px;
+    }
+
+    .rules > ul {
+        list-style: circle;
+        list-style-position: inside;
+        padding: 0 20px;
+    }
+
+    .rules p, li {
+        font-size: 1.2em;
+    }
+
+    .rules h3 {
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .rules .items2 li {
+        list-style-type: lower-alpha;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+
+    .info > h1 {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .info > h3, h4 {
+        font-size: 1.3em;
+        margin: 10px 50px;
+        font-style: italic;
+    }
+
+    .info table {
+        font-size: 1.1em;
+        width: 100%;
+    }
+
+
+    .info_2 {
+        margin: 3em 1em;
+    }
+
+    .info_2 > .prfos {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.2em;
+    }
+    
+    .registro {
+        margin: 0.5rem;
+        font-size: 1.2em;
+    }
+
+    fieldset#personal {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        margin-left: 10px;
+    }
+
+    fieldset#personal .nac_gen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    fieldset#personal .gen {
+        display: flex;
+        margin: 15px 0 0 0;
+        width: 70%;
+    }
+
+    fieldset#personal label {
+        width: 90%;
+    }
+
+    fieldset#personal > input {
+        width: 75%;
+        margin: 0 0 15px;
+    }
+
+    fieldset#personal .edu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    fieldset#personal .edu input {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+
+    fieldset#permission {
+        margin-left: 15px;
+    }
+
+    fieldset#permission textarea {
+        width: 95%;
+    }
+
+    fieldset#permission .auth {
+        width: 90%;
+        margin: 5px 0;
+    }
+
+    fieldset#permission .auth input {
+        margin: 15px 0;
+        width: 95%;
+    }
+
+    fieldset#permission .auth label {
+        width: 90%;
+    }
+
 }

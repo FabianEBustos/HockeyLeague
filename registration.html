@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style4.css">
+        <title>Hockey League</title>
+        
+        <link rel="icon" href="./img/favicon.png" type="image/x-icon" sizes="32x32">
+    </head>
+    <body>
+        <header>
+            <h1>Mighty Ducks Hockey League</h1>
+            <div class="container">
+                <nav class="container_menu">
+                    <a class="box" href="./index.html">Home</a>
+                    <a class="box" href="./about.html">About</a>
+                    <a class="box" href="./contact.html">Contact</a>
+                    <a class="box" href="./rules.html">Rules</a>
+                    <a class="box" href="./game_info.html">Info</a>
+                    <a class="box" id="activo_box" href="#">Register</a>
+                </nav>
+                <div class="container_banner">
+                    <img src="../img/design2_image1.jpg" alt="Banner">
+                </div>
+            </div>
+            <h2>Registration</h2>
+            <img src="./img/Logo_Mighty_ducks-01.png" alt="Logo Mighty Ducks" width="187" height="194">
+        </header>
+
+        <main>
+            <div class="registro">
+                <h1>Registration Form</h1>
+                <form class="formulario" action="./showdata.html" method="GET">
+                    <fieldset id="personal">
+                        <label for="nombre">Player's First Name:</label>
+                        <input type="text" name="nombre" id="nombre" size="100" >
+                        <label for="apellido">Last Name:</label>
+                        <input type="text" name="apellido" id="apellido" size="60" >
+                        <label for="direccion">Street Adress:</label>
+                        <input type="text" name="direccion" id="direccion" size="146" >
+                        <label for="ciudad">Ciudad : </label>
+                        <input type="text" name="ciudad" id="ciudad" size="100" >
+                        <label for="code">Zip Code:</label>
+                        <input type="number" name="code" id="code" >
+                        <div class="nac_gen">
+                            <div class="nac">
+                                <label for="nacimiento">Birth Date(mm/dd/yyyy):</label>
+                                <input type="date" name="nacimiento" id="nacimiento" >
+                            </div>
+                            <div class="gen">
+                                <h3>Gender:</h3>
+                                <label>
+                                    <span>Female</span>
+                                    <input type="radio" name="genero" value="female">
+                                    
+                                </label>
+                                <label>
+                                    <span>Male</span>
+                                    <input type="radio" name="genero" value="male">
+                                    
+                                </label>
+                            </div>
+                        </div>
+                        <div class="edu">
+                            <h3>Grade:</h3>
+                            <div class="lvl">
+                                <label>
+                                    <input type="checkbox" name="lvl" value="re-school" id="check1">
+                                    <span>Pre-School</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="1st" value="1st" id="check2">
+                                    <span id="ch1">1st</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="2nd" value="2nd" id="check3">
+                                    <span id="ch2">2nd</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="3rd" value="3rd" id="check4">
+                                    <span id="ch3">3rd</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="4th" value="4th" id="check5">
+                                    <span id="ch4">4th</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="5th" value="5th" id="check6">
+                                    <span id="ch5">5th</span>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="near_school">
+                        <legend>Which elementary school do you live near?</legend>
+                        <label id="school">Closest School:</label>
+                        <div class="school">
+                            <label>
+                                <div class="school" id="c1"></div>
+                                <input type="checkbox" name="school" value="AJ Katzenmaier">
+                                <span>AJ Katzenmaier</span>
+                            </label>
+                            <label>
+                                <div class="school" id="c2"></div>
+                                <input type="checkbox" name="school" value="Marjorie P Hart">
+                                <span>Marjorie P Hart</span>
+                            </label>
+                            <label>
+                                <div class="school" id="check3"></div>
+                                <input type="checkbox" name="school" value="Greenbay">
+                                <span>Greenbay</span>
+                            </label>
+                            <label>
+                                <div class="school" id="c4"></div>
+                                <input type="checkbox" name="school" value="North Elementary">
+                                <span>North Elementary</span>
+                            </label>
+                            <label>
+                                <div class="school" id="c5"></div>
+                                <input type="checkbox" name="school" value="Howard A Yeager">
+                                <span>Howard A Yeager</span>
+                            </label>
+                            <label>
+                                <div class="school" id="c6"></div>
+                                <input type="checkbox" name="school" value="South Elementary">
+                                <span>South Elementary</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="position">
+                        <legend>What  position(s) do you normally play?(Check all that apply)</legend>
+                        <div class="posi">
+                            <label>
+                                <div class="posicion" id="p1"></div>
+                                <input type="checkbox" name="posicion" value="Forward">
+                                <span>Forward</span>
+                            </label>
+                            <label>
+                                <div class="posicion" id="p2"></div>
+                                <input type="checkbox" name="posicion" value="Midfield">
+                                <span>Midfield</span>
+                            </label>
+                            <label>
+                                <div class="posicion" id="p3"></div>
+                                <input type="checkbox" name="posicion" value="Defense">
+                                <span>Defense</span>
+                            </label>
+                            <label>
+                                <div class="posicion" id="p4"></div>
+                                <input type="checkbox" name="posicion" value="Goalkeeper">
+                                <span>Goalkeeper</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="uniforms">
+                        <legend>Uniform Size</legend>
+                        <!-- <div class="uniforme"> -->
+                            <label>
+                                <div class="uniforme" id="u1"></div>
+                                <input type="checkbox" name="uniforme" value="Forward">
+                                <span>Forward</span>
+                            </label>
+                            <label>
+                                <div class="uniforme" id="u2"></div>
+                                <input type="checkbox" name="uniforme" value="Midfield">
+                                <span>Midfield</span>
+                            </label>
+                            <label>
+                                <div class="uniforme" id="u3"></div>
+                                <input type="checkbox" name="uniforme" value="Defense">
+                                <span>Defense</span>
+                            </label>
+                            <label>
+                                <div class="uniforme" id="u4"></div>
+                                <input type="checkbox" name="uniforme" value="Goalkeeper">
+                                <span>Goalkeeper</span>
+                            </label>
+                            <label>
+                                <div class="uniforme" id="u5"></div>
+                                <input type="checkbox" name="uniforme" value="Midfield">
+                                <span>Midfield</span>
+                            </label>
+                            <label>
+                                <div class="uniforme" id="u6"></div>
+                                <input type="checkbox" name="uniforme" value="Defense">
+                                <span>Defense</span>
+                            </label>
+                            <label>
+                                <div class="uniforme" id="u7"></div>
+                                <input type="checkbox" name="uniforme" value="Goalkeeper">
+                                <span>Goalkeeper</span>
+                            </label>
+                        <!-- </div> -->
+                    </fieldset>
+
+                    <fieldset id="permission">
+                        <legend>Permission to Play</legend>
+                        <div class="permis">
+                            <textarea name="textarea" rows="10" cols="150" disabled>
+                                I, the parent or guardian of the minor registrant, agree that the registant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation.
+                                By signing below, I herebyagree and authorizethe above. In addition, by signing below, also acknowledge that I have read the cancellation policy and agree to its terms.
+                            </textarea>
+                            <div class="auth">
+                                <label for="firma">Parent/Guardian Signature:</label>
+                                <input type="text" name="firma" id="firma" size="55" >
+                                <label for="fecha_actual">Date:</label>
+                                <input type="date" name="fecha_actual" id="fecha_actual" >
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset id="bottom">
+                        <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
