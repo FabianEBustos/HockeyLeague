@@ -229,7 +229,6 @@ header .container a {
 
 .info table {
     font-size: 1.2em;
-    width: 70%;
 }
 
 .info thead {
@@ -387,6 +386,11 @@ fieldset#near_school .school {
     flex-wrap: wrap;
 }
 
+fieldset#near_school label {
+    display: flex;
+    flex-direction: row;
+}
+
 fieldset#near_school .school label {
     width: 45%;
 }
@@ -403,6 +407,7 @@ fieldset#near_school .school span {
 fieldset#position .posi {
     display: flex;
     flex-wrap: wrap;
+    width: 365px;
 }
 
 fieldset#position .posi label {
@@ -481,28 +486,21 @@ h1 {
 }
 
 table {
-    display: flex;
-    /* border: 1px; */
-    justify-content: center;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+
+table thead th:first-child {
+    text-align: center;
+    padding-right: 3rem;
 }
 
 td,th {
-    border: 4px solid #ccc;
-    text-align: center;
+    /* border: 4px solid #ccc; */
+    text-align: left;
     padding: 8px;
   }
-
-/* .datos tbbody {
-    width: 400px;
-} */
-
-td:first-child {
-    width: 200px;
-}
-
-td:nth-child(2) {
-    max-width: 250px;
-}
 
 /* ---------     Media Query       --------- */
 
@@ -603,6 +601,11 @@ header > h1 {
     .info table {
         font-size: 1.1em;
         width: 100%;
+    }
+
+    .info .mapas iframe {
+        width: 480px;
+        height: 400px;
     }
 
 
